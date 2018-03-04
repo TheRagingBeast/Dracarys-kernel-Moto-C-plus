@@ -3,7 +3,7 @@
   * USB Fastcharge
   *
   *   0 - disabled (default)
-  *   1 - increase charge current limit to 1700mA
+  *   1 - increase charge current limit to 2000mA
   *
  */
  
