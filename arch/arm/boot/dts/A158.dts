@@ -848,7 +848,8 @@
 /* USB GPIO Kernal Standardization end */
 
 /*zhanyoufei@wind-mobi.com 20161121 begin*/
-&bat_comm {
+
+		&bat_comm {
 			/* cust_charging.h */
 			/* stop charging while in talking mode */
 			stop_charging_in_takling = <1 >;
@@ -857,10 +858,10 @@
 
 			/* Battery Temperature Protection */
 			mtk_temperature_recharge_support = <1 >;
-			max_charge_temperature = <52 >;
-			max_charge_temperature_minus_x_degree = <49 >;
-			min_charge_temperature = <0 >;
-			min_charge_temperature_plus_x_degree = <6 >;
+			max_charge_temperature = <59 >;
+			max_charge_temperature_minus_x_degree = <58 >;
+			min_charge_temperature = <(-19) >;
+			min_charge_temperature_plus_x_degree = <(-18) >;
 			err_charge_temperature = <0xff >;
 
 			/* Linear Charging Threshold */
@@ -874,11 +875,12 @@
 			usb_charger_current_suspend = <0 >;	/* Unit: 0.01 mA */
 			usb_charger_current_unconfigured = <7000 >;	/* Unit: 0.01 mA */
 			usb_charger_current_configured = <50000 >;	/* Unit: 0.01 mA */
-			usb_charger_current = <50000 >;	/* Unit: 0.01 mA */
-			/*zhanyoufei@wind-mobi.com 20161121 begin*/
-			ac_charger_current = <200000 >;	/* Unit: 0.01 mA */
-			/*zhanyoufei@wind-mobi.com 20161121 end*/
-			non_std_ac_charger_current = <200000 >;	/* Unit: 0.01 mA */
+			usb_charger_current = <102400 >;	/* Unit: 0.01 mA */
+			ac_charger_input_current = <200000 >;	/* Unit: 0.01 mA */
+			ac_charger_input_current_AP_EMEA = <100000 >;	/* Unit: 0.01 mA */
+			ac_charger_current = <179200 >;	/* Unit: 0.01 mA */
+			ac_charger_current_AP_EMEA = <102400 >;	/* Unit: 0.01 mA */
+			non_std_ac_charger_current = <50000 >;	/* Unit: 0.01 mA */
 			charging_host_charger_current = <65000 >;	/* Unit: 0.01 mA */
 			apple_0_5a_charger_current = <50000 >;	/* Unit: 0.01 mA */
 			apple_1_0a_charger_current = <65000 >;	/* Unit: 0.01 mA */
@@ -897,9 +899,6 @@
 			v_0percent_tracking = <3450 >;	/* Unit: mV */
 
 			/* High battery support */
-			high_battery_voltage_support = <1>;
+			high_battery_voltage_support = <1>;/*qiantao@wind-mobi.com*/
 		};
-
-/*zhanyoufei@wind-mobi.com 20161121 end*/
-
-
+/*zhangchao@wind-mobi.com 20161118 end*/
