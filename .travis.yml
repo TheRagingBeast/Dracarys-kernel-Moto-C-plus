@@ -4,7 +4,7 @@ before_install:
 - sudo apt-get install zip
 - sudo apt install ccache
 - git clone --recursive https://github.com/TheRagingBeast/TheRagingBeast-kernel-Moto-C-plus -b mod ~/trb
-- git clone https://github.com/nathanchance/gcc-prebuilts -b arm-linaro-7.x tc
+- git clone https://github.com/nathanchance/gcc-prebuilts -b arm-linaro-7.x ~/trb/tc
 - git clone --recursive https://github.com/varunhardgamer/LazyFlasher ~/trb/lf
 script:
 - cd ~/trb
