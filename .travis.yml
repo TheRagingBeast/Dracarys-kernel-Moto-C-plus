@@ -13,8 +13,6 @@ script:
 - sudo chmod -R 755 ~/trb
 - export ARCH=arm
 - export CROSS_COMPILE=~/trb/tc/bin/arm-linaro-linux-androideabi-
-- export KBUILD_BUILD_USER="DhirajMS"
-- export KBUILD_BUILD_HOST="Dracarys"
 - mkdir -p out
 - make O=out panelli_defconfig
 - make O=out -j128
