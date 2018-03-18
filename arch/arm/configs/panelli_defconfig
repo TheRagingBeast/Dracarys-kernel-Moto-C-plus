@@ -526,6 +526,11 @@ CONFIG_EXFAT_FS=y
 # WireGuard
 CONFIG_WIREGUARD=y
 
+##fastcharge
 # ThunderCharg 
 #CONFIG_THUNDERCHARGE_CONTROL=y
+#mtk-fastcharge
+CONFIG_FORCE_FAST_CHARGE=y
+
+#hotplugs
 CONFIG_ALUCARD_HOTPLUG=y
