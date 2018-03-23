@@ -5,14 +5,14 @@ before_install:
 - sudo apt install ccache
 - sudo apt install liblz4-tool
 - git clone --recursive https://github.com/TheRagingBeast/TheRagingBeast-kernel-Moto-C-plus -b master ~/trb
-- git clone https://github.com/nathanchance/gcc-prebuilts -b arm-linaro-7.x ~/trb/tc
+- git clone https://github.com/nathanchance/gcc-prebuilts -b arm-gnu-7.x ~/trb/tc
 script:
 - cd ~/trb
 - chmod a+x ~/trb/tc
 - chmod a+x ~/trb/tc/bin
 - sudo chmod -R 755 ~/trb
 - export ARCH=arm
-- export CROSS_COMPILE=~/trb/tc/bin/arm-linaro-linux-androideabi-
+- export CROSS_COMPILE=~/trb/tc/bin/arm-gnu-linux-androideabi-
 - mkdir -p out
 - make O=out panelli_defconfig
 - make O=out -j128
