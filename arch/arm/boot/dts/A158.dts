@@ -858,8 +858,8 @@
 
 			/* Battery Temperature Protection */
 			mtk_temperature_recharge_support = <1 >;
-			max_charge_temperature = <59 >;
-			max_charge_temperature_minus_x_degree = <58 >;
+			max_charge_temperature = <65 >;
+			max_charge_temperature_minus_x_degree = <60 >;
 			min_charge_temperature = <(-19) >;
 			min_charge_temperature_plus_x_degree = <(-18) >;
 			err_charge_temperature = <0xff >;
@@ -876,12 +876,12 @@
 			usb_charger_current_unconfigured = <7000 >;	/* Unit: 0.01 mA */
 			usb_charger_current_configured = <50000 >;	/* Unit: 0.01 mA */
 
-			usb_charger_current = <202400 >;	/* Unit: 0.01 mA */
-			ac_charger_input_current = <200000 >;	/* Unit: 0.01 mA */
-			ac_charger_input_current_AP_EMEA = <200000 >;	/* Unit: 0.01 mA */
-			ac_charger_current = <225000 >;	/* Unit: 0.01 mA */
-			ac_charger_current_AP_EMEA = <202400 >;	/* Unit: 0.01 mA */
-			non_std_ac_charger_current = <200000 >;	/* Unit: 0.01 mA */
+			usb_charger_current = <250000 >;	/* Unit: 0.01 mA */
+			ac_charger_input_current = <250000 >;	/* Unit: 0.01 mA */
+			ac_charger_input_current_AP_EMEA = <250000 >;	/* Unit: 0.01 mA */
+			ac_charger_current = <250000 >;	/* Unit: 0.01 mA */
+			ac_charger_current_AP_EMEA = <250000 >;	/* Unit: 0.01 mA */
+			non_std_ac_charger_current = <250000 >;	/* Unit: 0.01 mA */
 
 			charging_host_charger_current = <65000 >;	/* Unit: 0.01 mA */
 			apple_0_5a_charger_current = <50000 >;	/* Unit: 0.01 mA */
