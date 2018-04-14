@@ -24,7 +24,7 @@ export ARCH=arm
 
 #tc>arm-linaro-7.x
 git clone https://github.com/nathanchance/gcc-prebuilts -b arm-linaro-7.x arm-linaro-7.x
-export CROSS_COMPILE=/home/younilban/kernel/panelli/arm-linaro-7.x/bin/arm-linaro-linux-androideabi-
+export CROSS_COMPILE=$PWD/arm-linaro-7.x/bin/arm-linaro-linux-androideabi-
 
 
 #get toolchain gcc-4.9
