@@ -1,7 +1,8 @@
 VERSION = 3
 PATCHLEVEL = 18
-SUBLEVEL = 108
-NAME = Shuffling Zombie Juror
+SUBLEVEL = 109
+EXTRAVERSION =
+NAME = Diseased Newt
 
 # *DOCUMENTATION*
 # To see a list of typical targets execute "make help"

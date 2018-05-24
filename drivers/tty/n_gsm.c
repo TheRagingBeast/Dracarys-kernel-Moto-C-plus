@@ -1497,9 +1497,7 @@ static void gsm_dlci_t1(unsigned long data)
 			if (debug & 8)
 				pr_info("DLCI %d opening in ADM mode.\n",
 					dlci->addr);
-
 			dlci->mode = DLCI_MODE_ADM;
-
 			gsm_dlci_open(dlci);
 		} else {
 			gsm_dlci_close(dlci);
