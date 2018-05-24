@@ -1679,13 +1679,13 @@ static ssize_t show_Pump_Express(struct device *dev, struct device_attribute *at
 
 #if defined(CONFIG_MTK_PUMP_EXPRESS_SUPPORT)
 	/* Is PE connect */
-	if ((KAL_TRUE == ta_check_chr_type) && (STANDARD_CHARGER == BMT_status.charger_type)) {
+//	if ((KAL_TRUE == ta_check_chr_type) && (STANDARD_CHARGER == BMT_status.charger_type)) {
 		battery_log(BAT_LOG_CRTI, "[%s]Wait for PE detection\n", __func__);
-		do {
+//		do {
 			msleep(200);
-		} while (ta_check_chr_type);
-	}
-	if (is_ta_connect == KAL_TRUE)
+//		} while (ta_check_chr_type);
+//	}
+//	if (is_ta_connect == KAL_TRUE)
 		is_ta_detected = 1;
 #endif
 
@@ -3330,9 +3330,9 @@ void do_chrdet_int_task(void)
 			mtk_pep_set_is_cable_out_occur(true);
 
 #if defined(CONFIG_MTK_PUMP_EXPRESS_SUPPORT)
-			is_ta_connect = KAL_FALSE;
-			ta_check_chr_type = KAL_TRUE;
-			ta_cable_out_occur = KAL_TRUE;
+//			is_ta_connect = KAL_FALSE;
+//			ta_check_chr_type = KAL_TRUE;
+//			ta_cable_out_occur = KAL_TRUE;
 #endif
 		}
 
@@ -4527,7 +4527,7 @@ static int battery_probe(struct platform_device *dev)
 
 	wake_lock_init(&battery_suspend_lock, WAKE_LOCK_SUSPEND, "battery suspend wakelock");
 #if defined(CONFIG_MTK_PUMP_EXPRESS_SUPPORT)
-	wake_lock_init(&TA_charger_suspend_lock, WAKE_LOCK_SUSPEND, "TA charger suspend wakelock");
+//	wake_lock_init(&TA_charger_suspend_lock, WAKE_LOCK_SUSPEND, "TA charger suspend wakelock");
 #endif
 
 	mtk_pep_init();

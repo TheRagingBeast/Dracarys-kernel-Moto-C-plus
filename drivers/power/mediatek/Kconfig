@@ -296,7 +296,7 @@ config MTK_EMBEDDED_BATTERY
 
 config MTK_PUMP_EXPRESS_SUPPORT
 	bool "MediaTek PUMP EXPRESS"
-	default n
+	default y
 	help
 	  fast charging, by using linear charger
 	  to achive better charging ability.
@@ -305,7 +305,7 @@ config MTK_PUMP_EXPRESS_SUPPORT
 
 config MTK_PUMP_EXPRESS_PLUS_SUPPORT
 	bool "MediaTek PUMP EXPRESS PLUS"
-	default n
+	default y
 	help
 	  fast charging, by using switch charger
 	  to achive better charging ability.
