@@ -4,7 +4,7 @@ before_install:
 - sudo apt-get install zip
 - sudo apt install ccache
 - sudo apt install liblz4-tool
-- git clone --depth=1 https://github.com/TheRagingBeast/TheRagingBeast-kernel-Moto-C-plus -b master ~/trb
+- git clone --depth=1 https://github.com/TheRagingBeast/TheRagingBeast-kernel-Moto-C-plus -b test ~/trb
 - git clone --depth=1 https://github.com/nathanchance/gcc-prebuilts -b arm-gnu-7.x ~/trb/tc
 script:
 - cd ~/trb
