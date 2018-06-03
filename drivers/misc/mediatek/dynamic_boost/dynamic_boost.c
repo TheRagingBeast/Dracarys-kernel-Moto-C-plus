@@ -228,7 +228,7 @@ static int dboost_dvfs_hotplug_thread(void *ptr)
 			break;
 		}
 
-		interactive_boost_cpu(max_freq);
+//		interactive_boost_cpu(max_freq);
 		if (!cores_to_set_l)
 			cores_to_set_l = 1;
 		hps_set_cpu_num_base(BASE_PERF_SERV, cores_to_set_l, cores_to_set_b);
