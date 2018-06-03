@@ -15,6 +15,10 @@ config OF_TOUCHSCREEN
 	def_tristate INPUT
 	depends on INPUT && OF
 
+config TOUCHSCREEN_DOUBLETAP2WAKE
+	tristate "DoubleTap2Wake for touchscreens"
+	default n
+
 config TOUCHSCREEN_88PM860X
 	tristate "Marvell 88PM860x touchscreen"
 	depends on MFD_88PM860X

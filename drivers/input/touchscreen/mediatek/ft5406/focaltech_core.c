@@ -34,6 +34,10 @@
  * applicable license agreements with MediaTek Inc.
  */
 
+#ifdef CONFIG_TOUCHSCREEN_DOUBLETAP2WAKE
+#include <linux/input/doubletap2wake.h>
+#endif
+
 #include <linux/interrupt.h>
 #include <linux/i2c.h>
 #include <linux/sched.h>
