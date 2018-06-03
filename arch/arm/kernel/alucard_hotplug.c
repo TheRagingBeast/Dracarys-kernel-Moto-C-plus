@@ -70,7 +70,7 @@ static struct hotplug_tuners {
 	.hotplug_sampling_rate = 60,
 	.hotplug_enable = 1,
 	.min_cpus_online = 1,
-	.maxcoreslimit = 4
+	.maxcoreslimit = 4,
 	.maxcoreslimit_sleep = 1,
 	.hp_io_is_busy = 0,
 #if defined(CONFIG_POWERSUSPEND) || \
