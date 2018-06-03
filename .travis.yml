@@ -21,6 +21,6 @@ script:
 - curl --upload-file ./zImage https://transfer.sh/zImage
 - mv ~/trb/out/arch/arm/boot/zImage-dtb ~/trb/TRB-Kernel-Panelli/zImage-dtb
 - cd ~/trb/TRB-Kernel-Panelli
-- zip -r TRB-Kernel-Panelli.zip *
-- curl --upload-file ./TRB-Kernel-Panelli.zip https://transfer.sh/TRB-Kernel-Panelli.zip
+- zip -r TRB-Kernel-Panelli-$(date +"%d%m%Y").zip *
+- curl -T TRB* https://transfer.sh
 - echo All Done
